@@ -3,4 +3,7 @@
     <string name="gogak">고객</string>
     <string name="machul">매출</string>
     <string name="sangpum">상품</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="signin_submit">접속</string>
 </resources>
