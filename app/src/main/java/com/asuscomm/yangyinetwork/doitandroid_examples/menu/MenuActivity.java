@@ -11,6 +11,7 @@ import com.asuscomm.yangyinetwork.doitandroid_examples.R;
 import com.asuscomm.yangyinetwork.doitandroid_examples.menu_detail.MenuDetailActivity;
 import com.asuscomm.yangyinetwork.doitandroid_examples.menu_detail.domain.RequestData;
 import com.asuscomm.yangyinetwork.doitandroid_examples.menu_detail.domain.Requests;
+import com.asuscomm.yangyinetwork.doitandroid_examples.signin.SigninActivity;
 
 public class MenuActivity extends AppCompatActivity {
     private final String TAG = "jaeyoung/"+getClass().getSimpleName();
@@ -27,7 +28,16 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        Log.d(TAG, "onCreate: ");
+        processIntent();
         initView();
+    }
+
+    private void processIntent() {
+        Bundle bundle = getIntent().getExtras();
+        String account = (String)bundle.get(SigninActivity.KEYS.ACCOUNT);
+        Toast.makeText(this, "Welcome "+account, Toast.LENGTH_SHORT).show();
+        Log.d(TAG, "processIntent: account = "+account);
     }
 
     private void initView() {
