@@ -14,7 +14,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.asuscomm.yangyinetwork.doitandroid_examples.R;
+import com.asuscomm.yangyinetwork.doitandroid_examples.consts.ToastMessages;
 import com.asuscomm.yangyinetwork.doitandroid_examples.menu.MenuActivity;
+
+import static com.asuscomm.yangyinetwork.doitandroid_examples.consts.ToastMessages.SigninActivity.INFORM_FILL_THE_FORMS;
+import static com.asuscomm.yangyinetwork.doitandroid_examples.consts.ToastMessages.SigninActivity.INVALID_EMAIL;
 
 public class SigninActivity extends AppCompatActivity {
     private final String TAG = "jaeyoung/"+getClass().getSimpleName();
@@ -49,7 +53,7 @@ public class SigninActivity extends AppCompatActivity {
                     String pw = mPwEditText.getText().toString();
                     signin(email,pw);
                 } else {
-                    Toast.makeText(SigninActivity.this, "Invalid Email.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SigninActivity.this, INVALID_EMAIL, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -61,7 +65,7 @@ public class SigninActivity extends AppCompatActivity {
                     return false;
                 } else {
                     Log.d(TAG, "onTouch: unclickable");
-                    Toast.makeText(SigninActivity.this, "Please fill the forms.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SigninActivity.this, INFORM_FILL_THE_FORMS, Toast.LENGTH_SHORT).show();
 
                     return true; // It means I consumed the touch event
                 }

@@ -13,6 +13,10 @@ import com.asuscomm.yangyinetwork.doitandroid_examples.menu_detail.domain.Reques
 import com.asuscomm.yangyinetwork.doitandroid_examples.menu_detail.domain.Requests;
 import com.asuscomm.yangyinetwork.doitandroid_examples.signin.SigninActivity;
 
+import static com.asuscomm.yangyinetwork.doitandroid_examples.consts.ToastMessages.MenuActivity.ACTIVITY_RESULT_FROM_MENU_DETAIL;
+import static com.asuscomm.yangyinetwork.doitandroid_examples.consts.ToastMessages.MenuActivity.RESULT_CANCELED;
+import static com.asuscomm.yangyinetwork.doitandroid_examples.consts.ToastMessages.MenuActivity.WELCOME;
+
 public class MenuActivity extends AppCompatActivity {
     private final String TAG = "jaeyoung/"+getClass().getSimpleName();
     public static final String KEY_REQUEST_DATA = "request_data";
@@ -36,7 +40,7 @@ public class MenuActivity extends AppCompatActivity {
     private void processIntent() {
         Bundle bundle = getIntent().getExtras();
         String account = (String)bundle.get(SigninActivity.KEYS.ACCOUNT);
-        Toast.makeText(this, "Welcome "+account, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, String.format(WELCOME,account), Toast.LENGTH_SHORT).show();
         Log.d(TAG, "processIntent: account = "+account);
     }
 
@@ -94,9 +98,9 @@ public class MenuActivity extends AppCompatActivity {
             }
 
             String message = (String)data.getExtras().get(MenuDetailActivity.KEYS.MESSAGE);
-            Toast.makeText(this, "From : " + srcActivity + " Message : "+message, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, String.format(ACTIVITY_RESULT_FROM_MENU_DETAIL, srcActivity, message), Toast.LENGTH_SHORT).show();
         } else if(resultCode == RESULT_CANCELED) {
-            Toast.makeText(this, "RESULT_CANCELED", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, RESULT_CANCELED, Toast.LENGTH_SHORT).show();
         }
     }
 }
