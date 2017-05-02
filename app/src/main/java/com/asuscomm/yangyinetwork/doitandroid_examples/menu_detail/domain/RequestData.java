@@ -8,7 +8,7 @@ import android.os.Parcelable;
  */
 
 public class RequestData implements Parcelable {
-    public static final Parcelable.Creator CREATOR = new Creator<RequestData>() { // ??
+    public static final Parcelable.Creator CREATOR = new Creator<RequestData>() { // todo ???
         @Override
         public RequestData createFromParcel(Parcel source) {
             return new RequestData(source);

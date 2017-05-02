@@ -14,7 +14,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.asuscomm.yangyinetwork.doitandroid_examples.R;
-import com.asuscomm.yangyinetwork.doitandroid_examples.consts.ToastMessages;
 import com.asuscomm.yangyinetwork.doitandroid_examples.menu.MenuActivity;
 
 import static com.asuscomm.yangyinetwork.doitandroid_examples.consts.ToastMessages.SigninActivity.INFORM_FILL_THE_FORMS;
