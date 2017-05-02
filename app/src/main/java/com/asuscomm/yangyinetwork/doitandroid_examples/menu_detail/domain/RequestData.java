@@ -29,7 +29,11 @@ public class RequestData implements Parcelable {
     }
 
 
-    String request;
+    private String request;
+
+    public String getRequest() {
+        return request;
+    }
 
     @Override
     public int describeContents() {

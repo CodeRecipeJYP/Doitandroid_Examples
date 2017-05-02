@@ -68,20 +68,25 @@ public class MenuActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        String srcActivity="";
+        if (resultCode == RESULT_OK) {
+            String srcActivity = "";
 
-        switch(requestCode) {
-            case REQUEST_CODE.gogak:
-                srcActivity = Requests.gogak;
-                break;
-            case REQUEST_CODE.machul:
-                srcActivity = Requests.machul;
-                break;
-            case REQUEST_CODE.sangpum:
-                srcActivity = Requests.sangpum;
-                break;
+            switch (requestCode) {
+                case REQUEST_CODE.gogak:
+                    srcActivity = Requests.gogak;
+                    break;
+                case REQUEST_CODE.machul:
+                    srcActivity = Requests.machul;
+                    break;
+                case REQUEST_CODE.sangpum:
+                    srcActivity = Requests.sangpum;
+                    break;
+            }
 
+            String message = (String)data.getExtras().get(MenuDetailActivity.KEYS.MESSAGE);
+            Toast.makeText(this, "From : " + srcActivity + " Message : "+message, Toast.LENGTH_SHORT).show();
+        } else if(resultCode == RESULT_CANCELED) {
+            Toast.makeText(this, "RESULT_CANCELED", Toast.LENGTH_SHORT).show();
         }
-        Toast.makeText(this, "from "+srcActivity, Toast.LENGTH_SHORT).show();
     }
 }
