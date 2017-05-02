@@ -1,5 +1,6 @@
 package com.asuscomm.yangyinetwork.doitandroid_examples.signin;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.asuscomm.yangyinetwork.doitandroid_examples.R;
+import com.asuscomm.yangyinetwork.doitandroid_examples.menu.MenuActivity;
 
 public class SigninActivity extends AppCompatActivity {
     private final String TAG = "jaeyoung/"+getClass().getSimpleName();
@@ -44,5 +46,6 @@ public class SigninActivity extends AppCompatActivity {
     
     private void signin(String email, String pw) {
         Log.d(TAG, "signin() called with: email = [" + email + "], pw = [" + pw + "]");
+        startActivity(new Intent(getApplicationContext(), MenuActivity.class));
     }
 }
