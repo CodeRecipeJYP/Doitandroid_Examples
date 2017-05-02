@@ -1,10 +1,12 @@
-package com.asuscomm.yangyinetwork.doitandroid_examples;
+package com.asuscomm.yangyinetwork.doitandroid_examples.signin;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+
+import com.asuscomm.yangyinetwork.doitandroid_examples.R;
 
 public class SigninActivity extends AppCompatActivity {
     private final String TAG = "jaeyoung/"+getClass().getSimpleName();

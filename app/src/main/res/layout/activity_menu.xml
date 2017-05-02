@@ -4,44 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.asuscomm.yangyinetwork.doitandroid_examples.signin.SigninActivity">
-
-    <EditText
-        android:id="@+id/emailEditText"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintLeft_toLeftOf="@+id/guidelineLeft"
-        app:layout_constraintRight_toLeftOf="@+id/submitBtn"
-        app:layout_constraintTop_toTopOf="@+id/guidelineTop"
-        app:layout_constraintBottom_toTopOf="@+id/pwEditText"
-        app:layout_constraintHorizontal_weight="3"
-        />
-
-    <EditText
-        android:id="@+id/pwEditText"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintLeft_toLeftOf="@+id/guidelineLeft"
-        app:layout_constraintRight_toLeftOf="@+id/submitBtn"
-        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
-        app:layout_constraintHorizontal_weight="3"
-        />
+    tools:context="com.asuscomm.yangyinetwork.doitandroid_examples.menu.MenuActivity">
 
     <Button
-        android:id="@+id/submitBtn"
+        android:id="@+id/gogakBtn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Button"
@@ -49,10 +15,42 @@
         android:layout_marginRight="0dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/pwEditText"
+        app:layout_constraintLeft_toRightOf="@+id/guidelineLeft"
         app:layout_constraintRight_toLeftOf="@+id/guidelineRight"
-        app:layout_constraintTop_toTopOf="@+id/emailEditText"
-        app:layout_constraintBottom_toBottomOf="@+id/pwEditText"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineTop"
+        app:layout_constraintBottom_toTopOf="@+id/machulBtn"
+        app:layout_constraintHorizontal_weight="1"
+        />
+
+    <Button
+        android:id="@+id/machulBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Button"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/guidelineLeft"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@+id/gogakBtn"
+        app:layout_constraintBottom_toTopOf="@+id/sangpumBtn"
+        app:layout_constraintHorizontal_weight="1"
+        />
+
+    <Button
+        android:id="@+id/sangpumBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Button"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/guidelineLeft"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@+id/machulBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/guidelineBottom"
         app:layout_constraintHorizontal_weight="1"
         />
 
@@ -61,13 +59,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/guidelineBottom"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.8" />
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/guidelineTop"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3" />
+        app:layout_constraintGuide_percent="0.2" />
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
