@@ -15,4 +15,18 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <fragment
+        android:id="@+id/myMainFrag"
+        android:name="com.asuscomm.yangyinetwork.chapter5.MyMainFragment"
+        android:layout_width="357dp"
+        android:layout_height="219dp"
+        tools:layout="@layout/fragment_main"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="-121dp" />
+
 </android.support.constraint.ConstraintLayout>
