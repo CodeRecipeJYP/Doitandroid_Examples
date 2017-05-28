@@ -6,13 +6,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import static android.content.ContentValues.TAG;
 
 /**
  * Created by jaeyoung on 2017. 5. 28..
  */
 
 public class DBHelper extends SQLiteOpenHelper {
+    String TAG = "JYP/DBHelper";
     String TABLE_NAME;
 
     public DBHelper(Context context, String name, int version) {
@@ -38,8 +38,14 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_SQL);
 
         Log.d(TAG, "onCreate: inserting records.");
-        String INSERT_SQL = "insert into " + TABLE_NAME + "(name, age, phone) values ('John', 20, '010-7788-1234' );";
-        db.execSQL(INSERT_SQL);
+        String[] INSERT_SQL = {
+                "insert into " + TABLE_NAME + "(name, age, phone) values ('John', 20, '010-7788-1234' );",
+                "insert into " + TABLE_NAME + "(name, age, phone) values ('Brown', 40, '010-7788-1234' );",
+                "insert into " + TABLE_NAME + "(name, age, phone) values ('Yang', 34, '010-7788-1234' );"
+        };
+        for (int i = 0; i < INSERT_SQL.length; i++) {
+            db.execSQL(INSERT_SQL[i]);
+        }
     }
 
     @Override
