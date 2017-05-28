@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.FirebaseInstanceIdService;
+
 public class MainActivity extends AppCompatActivity {
     String TAG = "JYP/MainActivity";
     Button btn1, btn2;
@@ -39,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         input1 = (EditText) findViewById(R.id.input1);
         input2 = (EditText) findViewById(R.id.input2);
         tvStatus = (TextView) findViewById(R.id.tvStatus);
+
+        FirebaseInstanceId.getInstance().getToken();
     }
 
 

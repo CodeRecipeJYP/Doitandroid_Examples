@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "630478005077",
+    "firebase_url": "https://doitandroidexamples-169004.firebaseio.com",
+    "project_id": "doitandroidexamples-169004",
+    "storage_bucket": "doitandroidexamples-169004.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630478005077:android:3b7d2fe02ed4f289",
+        "android_client_info": {
+          "package_name": "com.asuscomm.yangyinetwork.doitandroid_examples"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630478005077-diq0vsl8e0ki7qdk3hkv4dt4p4e887ai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl8jU-LwVuDQpdFraD2uldmWAefSmlEGQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
