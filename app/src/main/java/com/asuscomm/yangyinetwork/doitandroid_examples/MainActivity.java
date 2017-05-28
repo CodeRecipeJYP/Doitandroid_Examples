@@ -40,4 +40,10 @@ public class MainActivity extends AppCompatActivity {
         input2 = (EditText) findViewById(R.id.input2);
         tvStatus = (TextView) findViewById(R.id.tvStatus);
     }
+
+
+    private void println(String s) {
+        tvStatus.setText(tvStatus.getText().toString()+ '\n'
+                +s);
+    }
 }
