@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn1, btn2;
     EditText input1, input2;
     TextView tvStatus;
+    DBHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: btn1");
+                String tableName = input1.getText().toString();
+                dbHelper = new DBHelper(MainActivity.this, tableName, 1);
             }
         });
 
