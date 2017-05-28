@@ -12,9 +12,9 @@ import java.util.List;
 public class DummyData {
     public static List<Friend> getFriendsDummy() {
         List<Friend> friends = new ArrayList();
-        friends.add(new Friend("ㅇ"));
-        friends.add(new Friend("ㅇ"));
-        friends.add(new Friend("ㅇ"));
+        friends.add(new Friend("ㅇ","ㅇㄹ", "ㅇㄹㅇ"));
+        friends.add(new Friend("ㅇ","ㅇㄹ", "ㅇㅇ2"));
+        friends.add(new Friend("ㅇ","ㅇㄹ", "ㅇㅇ4"));
 
         return friends;
     }

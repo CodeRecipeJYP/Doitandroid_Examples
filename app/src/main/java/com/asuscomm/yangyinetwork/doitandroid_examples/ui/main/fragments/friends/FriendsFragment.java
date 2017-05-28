@@ -14,6 +14,8 @@ import com.asuscomm.yangyinetwork.doitandroid_examples.ui.main.fragments.friends
 
 
 public class FriendsFragment extends Fragment {
+    MyFriendRecyclerViewAdapter adapter;
+
     public FriendsFragment() {
         // Required empty public constructor
     }
@@ -34,8 +36,9 @@ public class FriendsFragment extends Fragment {
         View view = inflater.inflate(R.layout.main_fragment_friends, container, false);
         RecyclerView friendsList = (RecyclerView) view.findViewById(R.id.recyclerView);
         friendsList.setLayoutManager(new GridLayoutManager(getContext(), 2));
-        friendsList.setAdapter(new MyFriendRecyclerViewAdapter(DummyData.getFriendsDummy()));
+        adapter = new MyFriendRecyclerViewAdapter(DummyData.getFriendsDummy());
+        friendsList.setAdapter(adapter);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.main_fragment_friends, container, false);
+        return view;
     }
 }
