@@ -6,5 +6,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="friends_fragment">FRIENDS Fragment</string>
+    <string name="rooms_fragment">ROOMS Fragment</string>
     <string name="settings_fragment">SETTINGS Fragment</string>
 </resources>
