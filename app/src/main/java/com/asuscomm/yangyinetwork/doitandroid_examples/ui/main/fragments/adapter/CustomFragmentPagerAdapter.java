@@ -4,9 +4,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.asuscomm.yangyinetwork.doitandroid_examples.ui.main.fragments.FriendsFragment;
-import com.asuscomm.yangyinetwork.doitandroid_examples.ui.main.fragments.RoomsFragment;
-import com.asuscomm.yangyinetwork.doitandroid_examples.ui.main.fragments.SettingsFragment;
+import com.asuscomm.yangyinetwork.doitandroid_examples.ui.main.fragments.friends.FriendsFragment;
+import com.asuscomm.yangyinetwork.doitandroid_examples.ui.main.fragments.rooms.RoomsFragment;
+import com.asuscomm.yangyinetwork.doitandroid_examples.ui.main.fragments.settings.SettingsFragment;
 
 /**
  * Created by jaeyoung on 2017. 5. 28..

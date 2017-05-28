@@ -9,5 +9,5 @@
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
-    tools:context="com.asuscomm.yangyinetwork.doitandroid_examples.ui.main.fragments.RoomsFragment"
-    tools:listitem="@layout/item_room" />
+    tools:context="com.asuscomm.yangyinetwork.doitandroid_examples.ui.main.fragments.rooms.RoomsFragment"
+    tools:listitem="@layout/main_item_room" />

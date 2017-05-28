@@ -1,4 +1,4 @@
-package com.asuscomm.yangyinetwork.doitandroid_examples.ui.main.fragments;
+package com.asuscomm.yangyinetwork.doitandroid_examples.ui.main.fragments.rooms;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -28,7 +28,7 @@ public class RoomsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_rooms, container, false);
+        View view = inflater.inflate(R.layout.main_fragment_rooms, container, false);
 
         // Set the adapter
         if (view instanceof RecyclerView) {
@@ -40,7 +40,7 @@ public class RoomsFragment extends Fragment {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
             // todo implement recyclerView
-//            recyclerView.setAdapter(new MyRoomRecyclerViewAdapter(new ArrayList<Room>()));
+//            recyclerView.setAdapter(new MyFriendRecyclerViewAdapter(new ArrayList<Room>()));
         }
         return view;
     }
