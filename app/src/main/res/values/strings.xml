@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Doitandroid_Examples</string>
+    <string name="main_tab_titles_1">FRIENDS</string>
+    <string name="main_tab_titles_2">ROOMS</string>
+    <string name="main_tab_titles_3">SETTINGS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="friends_fragment">FRIENDS Fragment</string>
+    <string name="settings_fragment">SETTINGS Fragment</string>
 </resources>
