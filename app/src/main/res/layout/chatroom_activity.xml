@@ -34,7 +34,5 @@
             android:layout_height="match_parent"
             android:background="#00ffffff"
             />
-
     </LinearLayout>
-
 </LinearLayout>
