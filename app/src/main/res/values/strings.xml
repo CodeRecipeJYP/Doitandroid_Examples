@@ -8,4 +8,5 @@
     <string name="friends_fragment">FRIENDS Fragment</string>
     <string name="rooms_fragment">ROOMS Fragment</string>
     <string name="settings_fragment">SETTINGS Fragment</string>
+    <string name="title_activity_chat_room">ChatRoomActivity</string>
 </resources>
