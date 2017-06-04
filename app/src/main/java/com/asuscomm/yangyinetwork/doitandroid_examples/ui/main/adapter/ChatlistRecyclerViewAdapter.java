@@ -39,7 +39,7 @@ public class ChatlistRecyclerViewAdapter extends RecyclerView.Adapter<ChatlistRe
         if(chat.isMine()) {
             holder.chatOthers.setVisibility(View.GONE);
             holder.chatMine.setVisibility(View.VISIBLE);
-            holder.chatMine.setText(chat.getContent());
+            holder.myContent.setText(chat.getContent());
         } else {
             holder.chatMine.setVisibility(View.GONE);
             holder.chatOthers.setVisibility(View.VISIBLE);

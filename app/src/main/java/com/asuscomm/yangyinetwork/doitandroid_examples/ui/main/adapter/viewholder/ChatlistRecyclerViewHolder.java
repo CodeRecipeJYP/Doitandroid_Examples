@@ -12,18 +12,21 @@ import com.asuscomm.yangyinetwork.doitandroid_examples.R;
  */
 
 public class ChatlistRecyclerViewHolder extends RecyclerView.ViewHolder {
+    public View chatMine;
+    public TextView myContent;
+
     public View chatOthers;
-    public TextView chatMine;
     public ImageButton othersPhoto;
     public TextView othersName, othersContent;
 
     public ChatlistRecyclerViewHolder(View itemView) {
         super(itemView);
         chatOthers = itemView.findViewById(R.id.chatitem_others);
-        chatMine = (TextView)itemView.findViewById(R.id.chatitem_mine);
+        chatMine = itemView.findViewById(R.id.chatitem_mine);
 
         othersPhoto = (ImageButton) chatOthers.findViewById(R.id.chatitem_imgbtn_photo);
         othersName = (TextView) chatOthers.findViewById(R.id.chatitem_tv_name);
         othersContent = (TextView) chatOthers.findViewById(R.id.chatitem_tv_content);
+        myContent = (TextView) chatMine.findViewById(R.id.chatitem_tv_content);
     }
 }
