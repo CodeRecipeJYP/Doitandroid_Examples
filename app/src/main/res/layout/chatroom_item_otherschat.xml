@@ -28,6 +28,7 @@
         app:layout_constraintLeft_toRightOf="@+id/chatitem_imgbtn_photo"
         />
     <TextView
+        android:id="@+id/chatitem_tv_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="16dp"
