@@ -12,10 +12,10 @@ import com.asuscomm.yangyinetwork.doitandroid_examples.R;
  */
 
 public class ChatlistRecyclerViewHolder extends RecyclerView.ViewHolder {
-    View chatOthers;
-    TextView chatMine;
-    ImageButton othersPhoto;
-    TextView othersName, othersContent;
+    public View chatOthers;
+    public TextView chatMine;
+    public ImageButton othersPhoto;
+    public TextView othersName, othersContent;
 
     public ChatlistRecyclerViewHolder(View itemView) {
         super(itemView);

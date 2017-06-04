@@ -6,6 +6,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.asuscomm.yangyinetwork.doitandroid_examples.R;
+import com.asuscomm.yangyinetwork.doitandroid_examples.models.dummy.DummyData;
+import com.asuscomm.yangyinetwork.doitandroid_examples.ui.main.adapter.ChatlistRecyclerViewAdapter;
 
 public class ChatRoomActivity extends AppCompatActivity {
 
@@ -16,6 +18,8 @@ public class ChatRoomActivity extends AppCompatActivity {
 
         RecyclerView chatlist = (RecyclerView) findViewById(R.id.chatroom_recyclerview_chatlist);
         chatlist.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
+        ChatlistRecyclerViewAdapter adapter = new ChatlistRecyclerViewAdapter(DummyData.getChatsDummy());
+        chatlist.setAdapter(adapter);
     }
 
 }

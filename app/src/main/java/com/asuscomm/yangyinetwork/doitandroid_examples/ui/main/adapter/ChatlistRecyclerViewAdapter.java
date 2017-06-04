@@ -35,7 +35,18 @@ public class ChatlistRecyclerViewAdapter extends RecyclerView.Adapter<ChatlistRe
 
     @Override
     public void onBindViewHolder(ChatlistRecyclerViewHolder holder, int position) {
-
+        Chat chat = chats.get(position);
+        if(chat.isMine()) {
+            holder.chatOthers.setVisibility(View.GONE);
+            holder.chatMine.setVisibility(View.VISIBLE);
+            holder.chatMine.setText(chat.getContent());
+        } else {
+            holder.chatMine.setVisibility(View.GONE);
+            holder.chatOthers.setVisibility(View.VISIBLE);
+            holder.othersPhoto.setImageResource(R.mipmap.ic_launcher);
+            holder.othersName.setText(chat.getName());
+            holder.othersContent.setText(chat.getContent());
+        }
     }
 
     @Override
