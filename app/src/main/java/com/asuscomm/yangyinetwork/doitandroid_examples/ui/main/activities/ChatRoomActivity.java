@@ -20,6 +20,10 @@ public class ChatRoomActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chatroom_activity);
 
+        initView();
+    }
+
+    private void initView() {
         RecyclerView chatlist = (RecyclerView) findViewById(R.id.chatroom_recyclerview_chatlist);
         chatlist.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
         ChatlistRecyclerViewAdapter adapter = new ChatlistRecyclerViewAdapter(DummyData.getChatsDummy());
@@ -32,5 +36,4 @@ public class ChatRoomActivity extends AppCompatActivity {
             }
         });
     }
-
 }
