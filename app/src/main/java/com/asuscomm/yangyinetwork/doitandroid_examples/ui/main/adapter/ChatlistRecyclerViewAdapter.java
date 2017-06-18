@@ -49,6 +49,11 @@ public class ChatlistRecyclerViewAdapter extends RecyclerView.Adapter<ChatlistRe
         }
     }
 
+    public void setChats(List<Chat> chats) {
+        this.chats = chats;
+        notifyDataSetChanged();
+    }
+
     @Override
     public int getItemCount() {
         return chats.size();
