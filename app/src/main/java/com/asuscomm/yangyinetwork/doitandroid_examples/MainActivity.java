@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        String token = FirebaseInstanceId.getInstance().getToken();
+        Log.d(TAG, "onCreate() called with: token = [" + token + "]");
+
         btn1 = (Button) findViewById(R.id.btn1);
         btn2 = (Button) findViewById(R.id.btn2);
 
